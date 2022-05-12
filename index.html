@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <title>電卓</title>
+    </head>
+    <body class="default">
+        <div id="display">0　</div>
+        <div class="key">
+            <button type="button" id="seven" class="button" onclick="buttonNumber('7')">7</button>
+            <button type="button" id="eight" class="button" onclick="buttonNumber('8')">8</button>
+            <button type="button" id="nine" class="button" onclick="buttonNumber('9')">9</button>
+            <button type="button" id="plus" class="button symbol" onclick="buttonSymbol('+')">+</button>
+        </div>
+        <div class="key">
+            <button type="button" id="four" class="button" onclick="buttonNumber('4')">4</button>
+            <button type="button" id="five" class="button" onclick="buttonNumber('5')">5</button>
+            <button type="button" id="six" class="button" onclick="buttonNumber('6')">6</button>
+            <button type="button" id="minus" class="button symbol" onclick="buttonSymbol('-')">-</button>
+        </div>
+        <div class="key">
+            <button type="button" id="one" class="button" onclick="buttonNumber('1')">1</button>
+            <button type="button" id="two" class="button" onclick="buttonNumber('2')">2</button>
+            <button type="button" id="three" class="button" onclick="buttonNumber('3')">3</button>
+            <button type="button" id="multiplication" class="button symbol" onclick="buttonSymbol('*')">*</button>
+        </div>
+        <div class="key">
+            <button type="button" id="zero" class="button" onclick="buttonZero('0')">0</button>
+            <button type="button" id="zero2" class="button" onclick="buttonZero('00')">00</button>
+            <button type="button" id="point" class="button" onclick="buttonSymbol('.')">.</button>
+            <button type="button" id="division" class="button symbol" onclick="buttonSymbol('/')">/</button>
+        </div>
+        <div class="key">
+            <button type="button" id="allclear" class="button" onclick="buttonAllclear()">AC</button>
+            <button type="button" id="equal" class="button" onclick="buttonResult()">=</button>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
+
